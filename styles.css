@@ -1,5 +1,5 @@
 :root {
-  --blue: #0096c7;
+  --blue: #6292e8;
   --lightBlue: #00b4d8;
   --gray: #adb5bd;
   --black: #333333;
@@ -28,6 +28,7 @@ form {
   padding: 2rem;
   color: var(--black);
   display: flex;
+  position: relative;
 }
 
 h2 {
@@ -98,6 +99,8 @@ label {
 
 input[type="checkbox"] {
   opacity: 0;
+  cursor: pointer;
+  z-index: 3;
 }
 
 .checkbox-container {
@@ -106,6 +109,7 @@ input[type="checkbox"] {
   width: 1rem;
   border-radius: 3px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .checkmark,
@@ -121,6 +125,7 @@ input[type="checkbox"] {
 .checkbox-label {
   font-size: 0.8rem;
   margin-left: 0.3rem;
+  color: var(--gray);
 }
 
 .checkbox-fill {
@@ -148,4 +153,12 @@ button {
   color: white;
   align-self: flex-start;
   cursor: pointer;
+}
+
+#character {
+  position: absolute;
+  transform: scale(0.6);
+  transform-origin: bottom left;
+  bottom: 10;
+  left: 0;
 }
