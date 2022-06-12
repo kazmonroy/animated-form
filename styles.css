@@ -160,5 +160,16 @@ button {
   transform: scale(0.6);
   transform-origin: bottom left;
   bottom: 10;
-  left: 0;
+  left: 2;
+}
+
+.submitted {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--black);
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
