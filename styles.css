@@ -1,0 +1,151 @@
+:root {
+  --blue: #0096c7;
+  --lightBlue: #00b4d8;
+  --gray: #adb5bd;
+  --black: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(90deg, var(--blue), var(--lightBlue));
+}
+
+form {
+  background-color: white;
+  min-height: 300px;
+  min-width: 500px;
+  border-radius: 2rem;
+  padding: 2rem;
+  color: var(--black);
+  display: flex;
+}
+
+h2 {
+  color: var(--blue);
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0096c7;
+  position: relative;
+}
+
+.input-container > label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+  transform-origin: left;
+}
+
+.input {
+  width: 100%;
+  height: 130%;
+  position: absolute;
+  top: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: var(--black);
+}
+
+label {
+  position: relative;
+  z-index: 1;
+  /* margin-right: auto; */
+  pointer-events: none;
+  padding: 0.5rem 0rem;
+}
+
+.line-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.promo-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox-container {
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.checkmark,
+input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border: 2px solid var(--gray);
+}
+
+.checkbox-label {
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.checkbox-fill {
+  position: absolute;
+  background-color: var(--lightBlue);
+  width: 100%;
+  height: 100%;
+  top: 100%;
+}
+
+.tick-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  z-index: 2;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background-color: var(--blue);
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem;
+  color: white;
+  align-self: flex-start;
+  cursor: pointer;
+}
