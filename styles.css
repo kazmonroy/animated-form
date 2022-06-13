@@ -179,8 +179,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 400px;
-    min-height: 500px;
+    min-width: 300px;
+
     padding: 0rem;
   }
 
@@ -193,10 +193,14 @@ button {
     min-height: 40px;
   }
 
+  .promo-container {
+    margin: 1rem 0rem;
+  }
+
   #character {
     transform: scale(0.4);
     left: 0;
-    bottom: 0;
+    bottom: -40px;
   }
 
   button {
